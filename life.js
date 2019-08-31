@@ -1,7 +1,7 @@
 // life.js -- Conway's Game of Life in JavaScript/ECMAScript (via Node.js)
 
-n = 40, m = 80;
-g = 66000;
+const n = 40, m = 80; // board is n * m
+const g = 66000; // number of generations
 
 function display(b) {
    for (var i = 0; i < n; i++) {
