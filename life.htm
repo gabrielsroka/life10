@@ -6,11 +6,11 @@
 <pre id=results></pre>
 <script>
 const process = {
-	stdout: {
-		write: function (s) { // Make the browser look like node.js.
-			results.innerHTML += s;
-		}
-	}
+  stdout: {
+    write: function (s) { // Make the browser look like node.js.
+      results.innerHTML += s;
+    }
+  }
 };
 const startTime = new Date();
 </script>
