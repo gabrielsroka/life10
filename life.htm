@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Conway's Game of Life in JavaScript</title>
+</head>
+<body>
+<pre id=results></pre>
+<script>
+const process = {
+	stdout: {
+		write: function (s) { // Make the browser look like node.js.
+			results.innerHTML += s;
+		}
+	}
+};
+const startTime = new Date();
+</script>
+<script src=life.js></script>
+<script>
+const endTime = new Date();
+process.stdout.write(endTime - startTime + " ms");
+</script>
+</body>
+</html>
