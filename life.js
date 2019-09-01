@@ -5,8 +5,10 @@ const g = 66000; // number of generations
 
 function display(b) {
    for (var i = 0; i < n; i++) {
-      for (var j = 0; j < m; j++) process.stdout.write(b[i][j] ? '*' : ' ');
-         process.stdout.write('\n');
+      for (var j = 0; j < m; j++) {
+         process.stdout.write(b[i][j] ? '*' : ' ');
+      }
+      process.stdout.write('\n');
    }
 }
 
